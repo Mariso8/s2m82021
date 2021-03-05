@@ -1,0 +1,527 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+
+body {
+	height: 100vh;
+}
+
+
+header {
+    display: inline-block;
+	font-size:0px;
+	width:100%;
+	text-align:center;
+}
+.titulo {
+	width: 30%;
+	text-align:left;
+	display:inline-block;
+}
+.titulo a {
+	color: black;
+	text-decoration: none;
+}
+.titulo h1 {
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+
+/*_____MENÚ_____*/
+
+.menu {
+	display: none;
+    width: 65%;
+    margin-top: 25px;
+	font-size: 16px;
+}
+.bicis {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    display: none;
+    width: 100vw;
+    left: 0;
+}
+.bicis li {
+	list-style: none;
+}
+
+
+
+/*_______SUBMENU________*/
+
+.submenu {
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    display: none;
+    width: 70vw;
+    left: 0;
+    top: 0;
+    margin-top: 15px;
+}
+
+.personalizar h2 {
+    color: #FDA1A2;
+}
+.submenu h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.submenu li {
+	list-style: none;
+}
+.submenu a {
+    text-align: left;
+    display: block;
+    font-size: 0.9rem;
+    padding-left: 0px;
+}
+.submenu img {
+    display: inline-block;
+    width: 40%;
+}
+
+.submenu span {
+    color: #b7b7b7;
+    font-style: italic;
+    border-left: 2px #b7b7b7 solid;
+    padding-left: 10px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+/*_______ASIDE_______*/
+aside {
+	font-size:16px;
+    display: inline-block;
+    width: 60%;
+	min-width:240px;
+    margin-top: 25px;
+	text-align:right;
+	vertical-align: top;
+}
+.aside0{
+	margin-right:40px;
+}
+.aside0 li {
+    list-style: none;
+    display: inline-block;
+}
+.fa {
+	display: inline-block;
+	font-size: 20px;
+	color: black;
+	padding: 10px;
+}
+
+.menuaside li {
+    width: 100%;
+    list-style: none;
+    color: black;
+    background-color: #ececec;
+    padding: 15px 30px;
+    border-bottom: 1px solid white;
+}
+.menuaside a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*______MAIN______*/
+
+.home {
+    height: 90vh;
+    background-image: url("../Images/home.jpg");
+    background-blend-mode: darken;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.home h1 {
+	font-weight: 400;
+	font-size: 2.3rem;
+	padding: 20px;
+}
+.home h2 {
+	font-weight: 300;
+	font-size: 1.2rem;
+	margin: 10px 0px 40px;
+}
+.home a {
+	text-decoration: none;
+	font-size: 1rem;
+	color: black;
+	font-weight: 200;
+	background-color: white;
+	border-radius: 30px;
+	padding: 10px 30px;
+	margin: 40px;
+	border: 2px solid white;
+}
+.home a:hover {
+    background-color: transparent;
+    opacity: 70%;
+    font-weight: 200;
+    color: white;
+}
+
+
+.mascara {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+
+
+/*_____________PERSONALIZAR______________*/
+
+
+.paginapersonal {
+	position:relative;
+	width: 100%;
+	margin: 20px 40px;
+}
+#especific {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+    width: 30%;
+    height: 100vh;
+    display: inline-block;
+    margin-top: 0px;
+}
+#especific h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+#especific h2{
+	font-size: 1rem;
+	font-weight: 400;
+	color: #585858;
+}
+#especific span:hover{
+	color: #999;
+	cursor: pointer;
+}
+#especific p {
+	color: #585858;
+	font-size: 0.9rem;
+}
+#especific a {
+	font-style: italic;
+}
+
+#bicipers{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width:20%;
+}
+
+#personal {
+    display: inline-block;
+    width: 100%;
+}
+
+.rrss {
+	list-style: none;
+  	padding-top: 20px;
+}
+.rrss li {
+    display: inline-block;
+	cursor: pointer;
+
+}
+.rrss .fa {
+	font-size: 20px;
+	color: #999;
+	padding: 5px;
+}
+
+
+#gran{
+	width: 60%;
+	height: auto;
+	display: block;	
+	margin: auto;
+}
+.biciP {
+	cursor: pointer;
+	width: 20px;
+	border-radius: 50%;
+	height: 20px;
+	display: inline-block;
+	border: 2px solid transparent;
+}
+.biciPselec{
+	border: 2px solid #AFAFAF;
+}
+#bola1 {
+	background-color: grey;
+}
+#bola2 {
+	background-color: blue;
+}
+#bola3 {
+	background-color: black;
+}
+.bajo {
+    position: fixed;
+    bottom: 0px;
+    right: 10%;
+}
+
+.bajo li {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 1rem;
+    margin: 0px;
+    width: 200px;
+    text-align: center;
+}
+
+.personalizala {
+	background-color: white;
+	color: black;
+	border: 1px solid #999;
+}
+.personalizala:hover {
+	background-color: #D6D6D6;
+
+}
+.bajo h1 {
+	font-size: 1rem;
+}
+.bajo img {
+	width: 20px;
+	display: inline-block;
+}
+
+.comprarb {
+	padding: 12px;
+	color: white;
+	background-color: #3D4891;
+}
+.comprarb:hover {
+	background-color: black;
+	
+}
+
+
+.preciob {
+    color: white;
+    background-color: black;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+/*___________PERSONALIZAR QUAD_____________*/
+
+.quad {
+	margin: 15px;
+}
+.quad h1 {
+    text-align: center;
+    width: 100vw;
+    padding: 20px;
+}
+
+.minibolas {
+	border-radius: 50%;
+	width: 10px;
+	width: 20px;
+	height: 50px;
+}
+.color1 {
+	background-color: #ED91CA;
+}
+.color2 {
+	background-color: black;
+}
+.color3 {
+	background-color: red;
+}
+.color4 {
+	background-color: blue;
+}
+.persvarias {
+	width: 100%;
+}
+.persvarias h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 25px;
+}
+.modelo {
+	width: 33%;
+	height: 33%;
+	display: inline-block;
+	text-align: center;
+}
+.modelo img {
+	width: 80%;
+}
+
+.modelo h3 {
+    display: inline-block;
+    font-size: 1rem;
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*+++++++++ HAMBURGUESA ++++++++*/
+#flag {
+	display: none;
+}
+.menu-toogle {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-toogle span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 20px;
+	height: 2px;
+	margin: auto;
+	background-color: black;
+}
+.menu-toogle span:before,
+.menu-toogle span:after {
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	content: '';
+	background: black;
+	left: 0;
+}
+.menu-toogle span:before {
+	top: -0.5em;
+}
+.menu-toogle span:after {
+	bottom: -0.5em;
+}
+/*+++++++++++++++ NAV ++++++++++++++++++*/
+
+
+#flag:checked ~ .hamburguesa {
+   display: block;
+}
+.hamburguesa {
+	display:none;
+    position: absolute;
+    transition: all 1s ease;
+    top: 9vh;
+    z-index: 10;
+    overflow: hidden;
+    left: 0px;
+	width: 100%;
+}
+
+	
+	
+	
+	
+	
+/*++++++++++ ANIMATION HAMBUR +++++++++*/
+#flag:checked + .menu-toogle span {
+	background: none;
+}
+.menu-toogle span {
+	transition: background 0s .25s;
+}
+.menu-toogle span:before {
+	-webkit-transition-property: top, transform;
+	transition-property: top, transform;
+}
+.menu-toogle span:after {
+	-webkit-transition-property: bottom, transform;
+	transition-property: bottom, transform;
+}
+#flag:checked + .menu-toogle span:before {
+	top: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+#flag:checked + .menu-toogle span:after {
+	bottom: 0;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+#flag:checked + .menu-toogle span:before,
+#flag:checked + .menu-toogle span:after {
+	-webkit-transition-delay: 0s, .25s;
+	transition-delay: 0s, .25s;
+}
+.menu-toogle span:before,
+.menu-toogle span:after {
+	-webkit-transition-delay: .25s, 0s;
+	-webkit-transition-duration: .25s, .25s;
+	transition-delay: .25s, 0s;
+	transition-duration: .25s, .25s;
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+

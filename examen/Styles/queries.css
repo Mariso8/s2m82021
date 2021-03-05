@@ -1,0 +1,224 @@
+
+/* DESKTOP */
+@media screen and (min-width: 1000px) {
+
+body {
+	height: 100vh;
+}
+
+#header {
+	height: 10vh;
+}	
+	
+header {
+    display: inline-flex;
+    width: 100%;
+}
+.titulo {
+	width: 20%;
+}
+	
+
+	
+	
+	
+
+
+/*__________MENU________*/	
+.menu-toogle {		
+	display: none;
+}
+.menu {
+	width: 60%;	
+	display: inline-flex;
+}
+.menupral {
+	position: static;
+    top: 0;
+    height: auto;
+    overflow: visible;
+	text-align: center;
+	
+    transition: all 1s ease;
+    z-index: 10;
+    left: 0px;
+	width: 100%;
+}
+
+.ulpral {
+	display: inline-flex;
+    list-style: none;
+    margin: 0;
+	color: black;
+    background-color: #fff;
+}
+.ulpral li:last-child a {
+	border: 0;
+}
+
+.ulpral a {
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	color: black;
+	text-align: center;
+}
+.ulpral:hover a {
+    color: #999;
+    font-family: 'Oswald', sans-serif;
+}
+.ulpral a:hover {
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+}
+	
+	
+.carretera {
+    margin-top: 40px;
+}
+.line li {
+	padding: 0px 20px;
+}
+.line::after {
+	content: "";
+	display: block;
+	width: 0;
+	color: black;
+	height: 1px;
+	transition: all 0.5s ease;
+}
+.line:hover:after {
+	width: 100%;
+	}
+
+.bicis {
+	max-height: 0;
+	transition: all 1s ease;
+	overflow: hidden;
+	display: block;
+}
+.bicis ul {
+	padding-left: 10px;
+}
+.bicis a {
+    display: block;
+    font-size: 2rem;
+    text-align: left;
+    padding-top: 15px;
+    font-weight: 200;
+}
+.bicicletas:hover .bicis {
+	max-height: 600px;
+	transition: all 1s ease;
+	padding-bottom: 60px;
+}
+
+
+
+	
+
+/*_______SUBMENU______*/
+
+.submenu {
+    display: none;
+    transition: all 1s ease;
+    overflow: hidden;
+    left: 20%;
+    font-weight: 200;
+    height: 100%;
+    width: 100%;
+    text-align: left;
+    padding-top: 40px;
+    border-left: 1px #b7b7b7 solid;
+}
+.modelos {
+	left: 300px;
+	}
+.submenu ul {
+	display: inline-block;
+    vertical-align: top;
+	width: 15%;
+}
+.personalizar {
+	border-left: 1px #b7b7b7 solid;
+	}
+.submenu ul li a span{
+	display:none;	
+	
+}
+.submenu ul li a:hover span{
+	display:inline;	
+}
+.submenu a {
+    text-align: left;
+    display: block;
+    font-size: 1.2rem;
+    padding-left: 0px;
+}	
+.submenu h3 {
+	font-weight: 300;	
+}	
+	
+.submenu #imamenu{
+	display:none;
+}
+.submenu img {
+	width: 50%;
+	height: 100%;
+}
+
+.carretera:hover .submenu {
+	display:block;
+
+}
+
+		
+.personalizar {
+	top: 0px;
+	left: 600px;
+	
+}
+
+	
+	
+/*_______ASIDE_______*/
+aside {
+    display: inline-block;
+    width: 20%;
+    margin-top: 25px;
+}	
+	
+	
+	
+	
+	
+/*_____ MAIN _______*/
+	
+.home {
+    padding: 200px;
+}
+
+}
+	
+	
+
+
+
+/* MINI MOBILE */
+@media screen and (max-width: 440px) {
+	.titulo {
+		width: 100%;
+	}
+	aside {
+		font-size: 16px;
+		display: inline-block;
+		width: 100%;
+		text-align: right;
+		margin-top: 0px;
+		vertical-align: top;
+	}
+	.hamburguesa {
+		top: 14vh;
+	}
+}
+	
